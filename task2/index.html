@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form name="f1" class="lists">
+        Список завдань
+        <label for="html"
+          ><input name="check" type="checkbox" id="html" />HTML5</label
+        >
+        <label for="css"
+          ><input name="check" type="checkbox" id="css" />CSS3</label
+        >
+        <label for="sass"
+          ><input name="check" type="checkbox" id="sass" />SASS/SCSS</label
+        >
+        <label for="bootstrap"
+          ><input name="check" type="checkbox" id="bootstrap" />Bootstrap</label
+        >
+      </form>
+
+      <div class="task">
+        <div class="title">Додати нове завдання</div>
+        <form name="f2" class="form2">
+          <input type="text" name="text" required />
+          <button type="button" id="btn">Додати</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="error1">
+      <p class="text"></p>
+      <button
+        type="button"
+        class="close-btn"
+        onclick="closeBtnClick()"
+      ></button>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
